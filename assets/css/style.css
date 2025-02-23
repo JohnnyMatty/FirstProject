@@ -99,3 +99,68 @@ a {
 .header .btn-sign-up {
   min-width: 99px;
 }
+
+/* Hero section */
+@keyframes hovering {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-summary {
+  position: absolute;
+  bottom: -50px;
+  left: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #f9f9f9,
+    #f0f0f0
+  ); /* Gradient colors */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Regular shadow */ 0 4px 8px rgba(255, 255, 255, 0.5),
+    /* Gradient shadow part 1 */ 0 4px 8px rgba(240, 240, 240, 0.5); /* Gradient shadow part 2 */
+  animation: hovering 2s infinite;
+}
+
+.hero-summary .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero-summary .item .info {
+  font-family: sans-serif;
+  margin-left: 1rem;
+}
+
+.img {
+  width: 1280px;
+  height: 640px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
